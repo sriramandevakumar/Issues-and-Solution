@@ -10,3 +10,16 @@ Module not found: Error: Can't resolve '@syncfusion/ej2-angular-richtexteditor' 
 Solution :
 Add the "@syncfusion/ej2": "^17.3.14"" and ""@syncfusion/ej2-angular-richtexteditor": "^17.2.52"" in pakage.json
 Then run "npm install"
+
+Error:
+ERROR Error: Uncaught (in promise): Error: Cannot match any routes. URL Segment: 'doccomponent'
+Error: Cannot match any routes. URL Segment: 'doccomponent'
+    at ApplyRedirects.push../node_modules/@angular/router/fesm5/router.js.ApplyRedirects.noMatchError
+    
+Solution :
+Add below code in app-routing.module.ts
+
+{
+     path: 'doccomponent',
+     component: DoccomponentComponent
+  },
