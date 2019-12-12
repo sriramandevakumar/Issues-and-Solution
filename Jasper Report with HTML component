@@ -1,0 +1,43 @@
+This is document to check the fesibility of adding HTML components dynamicaly in Jasper report.
+
+
+1.How to increase the column width dynamically in iReport using dynamic report?
+
+https://stackoverflow.com/questions/31965653/how-to-increase-the-column-width-dynamically-in-ireport-using-dynamic-report
+
+drives to :
+"In jasper reports, you cannot increase the width of the component dynamically. You can only increase the height dynamically"
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+2.How To Make Text-box Height Dynamic With Content In Jasper Report, Jaspersoft Studio
+
+http://burnignorance.com/reporting-tools-tips/how-to-make-text-box-height-dynamic-with-content-in-jasper-report-jaspersoft-studio
+
+takes to :
+
+While developing reports, its a common requirement to have the textbox height dynamic which should increase or decrease based on its content.
+
+To achieve this in JasperReport is a bit tricky, because here we need to handle the textbox dynamic height along with all other objects position and height relative to the textbox in that specific band/section of the report.
+
+So here are the steps to follow:
+
+So here is the steps to follow:
+
+	- Mark the textbox property Stretch With Overflow as checked(in Jaspersoft Studio)
+
+	<textField isStretchWithOverflow=”true”>
+
+	- Mark the Stretch Type attribute as Relative To Tallest Object for all elements in the same band/section which need to be stretched along with the textbox.
+
+	- Mark the Position Type attribute as Float for all elements which are below the textbox in the same band/section of the report and needed to move down/up based on the height of the textbox.
+  
+----------------------------------------------------------------------------------------------------------------------------------------  
+3.Code for pojo class to jasper
+
+https://www.developer.com/java/doing-dynamic-reporting-through-jasperreport.html
+----------------------------------------------------------------------------------------------------------------------------------------  4. All HTML tags will not be consumed by jasper.
+
+https://community.jaspersoft.com/questions/533748/html-pdf
+
+
