@@ -23,3 +23,9 @@ Add below code in app-routing.module.ts
      path: 'doccomponent',
      component: DoccomponentComponent
   },
+
+Error : 
+ error TS2377: Constructors for derived classes must contain a 'super' call.
+ 
+Solution :
+ Add the "super();" in side the constructer of specific component.
