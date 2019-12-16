@@ -1,0 +1,8 @@
+Error :
+ORA-01691: unable to extend lob segment %s.%s by %s in tablespace %s 
+
+Cause: 
+Failed to allocate an extent of the required number of blocks for LOB segment in the tablespace indicated.   
+
+Solution:
+If you are DBA Use ALTER TABLESPACE ADD DATAFILE statement to add one or more files to the tablespace indicated. 
