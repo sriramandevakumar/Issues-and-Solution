@@ -1,4 +1,13 @@
 Error :
+error cb() never called! 21409 error This is an error with npm itself
+
+Solution :
+Permission denied to location so please change the location.
+
+
+
+
+Error :
 Node Sass does not yet support your current environment: Windows 64-bit with Unsupported runtime
 
 Solution :
