@@ -1,4 +1,21 @@
 Error :
+ ERROR in ./node_modules/ng-multiselect-dropdown/fesm5/ng-multiselect-dropdown.js
+ 
+Solution :
+
+Solved setting the version of ng-multiselect-dropdown to 0.2.3.S
+
+
+
+Error : 
+ERROR in node_modules/rxjs/internal/types.d.ts(81,44): error TS1005: ';' expected.
+
+Solution :
+npm install rxjs@6.0.0 --save
+npm install rxjs-compat@6.0.0 --save
+
+
+Error :
 error cb() never called! 21409 error This is an error with npm itself
 
 Solution :
