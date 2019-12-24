@@ -1,3 +1,28 @@
+Error :
+ERROR in ./node_modules/@syncfusion/ej2-angular-richtexteditor/@syncfusion/ej2-angular-richtexteditor.es5.js
+
+Solution :
+Update angular to latest versions and it dependecies and typescript should be in version 3.5.3
+
+if that is not possible follow the below process
+
+kindly check package.json following are the properties you are using
+
+"@angular/cli": "~6.1.5",
+"@syncfusion/ej2": "^17.3.14",
+"@syncfusion/ej2-angular-richtexteditor": "^17.2.52",
+"@angular-devkit/build-angular": "^0.10.7",
+"typescript": "~2.7.2"
+---------------------------------------------------------------------------------------------------------------------------------------------
+Error :
+Node Sass does not yet support your current environment: Windows 64-bit with Unsupported runtime (79)
+
+Solution:
+npm i node-sass
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
 Error:
 Schema validation failed with the following errors:
 
