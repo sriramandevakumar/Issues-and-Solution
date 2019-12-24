@@ -1,3 +1,26 @@
+Error:
+Schema validation failed with the following errors:
+
+Solution :
+
+The issue is generally because of a version mismatch in your package.json file.
+
+In my Angular 7 app, I have changed "@angular-devkit/build-angular": "^0.800.2" to "@angular-devkit/build-angular": "~0.7.0".
+
+Then I ran the command npm install after deleting node_modules.
+
+Aside: Use ^ carefully. Your working code may not work in the future if there is a major change in the package used.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Error :
+Can't find compiler ngcc module after upgrading Angular and project
+Solution:
+In your package.json file, change the @angular/cli version in devDependencies to:
+
+"@angular/cli": "7.1.0"
+
+
 Error :
  ERROR in ./node_modules/ng-multiselect-dropdown/fesm5/ng-multiselect-dropdown.js
  
@@ -5,7 +28,7 @@ Solution :
 
 Solved setting the version of ng-multiselect-dropdown to 0.2.3
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 Error : 
 ERROR in node_modules/rxjs/internal/types.d.ts(81,44): error TS1005: ';' expected.
@@ -13,7 +36,7 @@ ERROR in node_modules/rxjs/internal/types.d.ts(81,44): error TS1005: ';' expecte
 Solution :
 npm install rxjs@6.0.0 --save
 npm install rxjs-compat@6.0.0 --save
-
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 Error :
 error cb() never called! 21409 error This is an error with npm itself
@@ -22,13 +45,14 @@ Solution :
 Permission denied to location so please change the location.
 
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 Error :
 Node Sass does not yet support your current environment: Windows 64-bit with Unsupported runtime
 
 Solution :
 npm install node-sass
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 Error:
 Module not found: Error: Can't resolve '@syncfusion/ej2-angular-richtexteditor' in 'D:\0_Sriraman\Project\CLODEMOSERVER\LOSAPP_NEW\LOSAPP\src\app'
@@ -36,6 +60,7 @@ Module not found: Error: Can't resolve '@syncfusion/ej2-angular-richtexteditor' 
 Solution :
 Add the "@syncfusion/ej2": "^17.3.14"" and ""@syncfusion/ej2-angular-richtexteditor": "^17.2.52"" in pakage.json
 Then run "npm install"
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 Error:
 ERROR Error: Uncaught (in promise): Error: Cannot match any routes. URL Segment: 'doccomponent'
@@ -49,7 +74,7 @@ Add below code in app-routing.module.ts
      path: 'doccomponent',
      component: DoccomponentComponent
   },
-
+---------------------------------------------------------------------------------------------------------------------------------------------
 Error : 
  error TS2377: Constructors for derived classes must contain a 'super' call.
  
