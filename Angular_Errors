@@ -1,4 +1,16 @@
 Error :
+“You seem to not be depending on ”@angular/core“.”
+while giving ng server
+
+Solution :
+Run - npm link
+and - ng s
+
+-------------------------------------------------------------------
+
+
+
+Error :
 ERROR in ./node_modules/@syncfusion/ej2-angular-richtexteditor/@syncfusion/ej2-angular-richtexteditor.es5.js
 
 Solution :
